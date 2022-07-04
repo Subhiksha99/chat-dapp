@@ -1,0 +1,278 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: rgb(255, 255, 255);
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	
+}
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+
+body {
+	background-color: #ffffff;
+  }
+  
+.app {
+	
+	max-width: 1500px;
+	margin: 0 auto;
+  }
+  
+header {
+	background-color: #f41579;
+	height: 10vh;
+	min-height: 50px;
+	color: white;
+	width: 100%;
+	align-items: center;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	z-index: 99;
+	padding: 10px;
+	box-sizing: border-box;
+  }
+  
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+  }
+
+.loginContainer{
+	width: 300px;
+	height: 300px;
+	color: #ffffff;
+	border: 15px solid rgb(82, 233, 233);
+	padding: 50px;
+	margin: 20px;
+	position: relative;
+	top: 80px;
+  	left: 500px;
+	background-image: url("/image/colourfull background.png");
+  display:block;
+}
+  
+  main {
+	height: 100vh;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  main::-webkit-scrollbar {
+	width: 0.25rem;
+  }
+  
+  main::-webkit-scrollbar-track {
+	/*background: #2525af;*/
+  }
+  
+  main::-webkit-scrollbar-thumb {
+	/*background: #6649b8;*/
+  }
+  
+  form {
+	height: 8vh;
+	position: fixed;
+	bottom: 0;
+	background-color: rgb(255, 255, 255);
+	
+	width: 100%;
+	max-width: 728px;
+	display: flex;
+	font-size: 1.5rem;
+  }
+  
+  form button {
+	width: 20%;
+	background-color: rgb(72, 207, 79);
+  }
+  
+  
+  input {
+	line-height: 1.5;
+	width: 100%;
+	font-size: 1.5rem;
+	background: rgb(237, 42, 130);
+	outline: none;
+	border: none;
+	padding: 0 10px;
+	margin: 0;
+  }
+  .typeWindow input{
+	background-color: #edf3f0;
+  color:black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  max-width: 1500px;
+  position: relative;
+	bottom: 0px;
+  	left: 500px;
+  }
+  .typeWindow button{
+	background-color: #f41579;
+	position: relative;
+	bottom: 0px;
+  	left: 500px;
+  }
+  button {
+	background-color: #e22772; 
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 1.25rem;
+	margin: 0;
+  }
+
+  button:hover, button:active {
+	filter: brightness(0.9);
+  }
+  
+  button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+  }
+
+  
+  
+  .login {
+	margin: 1rem 0 0;
+	background: #e22772; 
+  }
+  
+  label {
+	  color: rgb(5, 5, 5);
+	  margin: 0.5rem 0;
+  }
+  ul, li {
+	text-align: left;
+	list-style: none;
+  }
+  
+  p {
+	max-width: 500px;
+	margin-bottom: 0;
+	line-height: 24px;
+	padding: 10px 20px;
+	border-radius: 25px;
+	position: relative;
+	color: white;
+	text-align: center;
+  }
+  
+  .message {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	word-wrap:break-word;
+  }
+  
+  
+  .sent {
+	flex-direction: row-reverse;
+  }
+  
+  .sent p {
+	color: white;
+	background: #0b93f6;
+	align-self: flex-end;
+	text-align: right;
+  }
+  .received p {
+	background: #e5e5ea;
+	color: black;
+	text-align: left;
+  }
+
+  .message-text {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-end;
+  }
+
+  .received .message-text {
+	align-items: flex-start;
+}
+
+  time {
+	  color: white;
+	  font-size: 0.7rem;
+	  color: #9a9a9a;
+	  margin: 0 1rem;
+  }
+  
+  img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 2px 5px;
+  }
+
+  .message:last-child {
+	  margin-bottom: 20px;
+  }
+
+  .user-bio {
+	  display: flex;
+	  align-items: center;
+  }
+
+  .scroll-button {
+	  position: fixed;
+	  bottom: 70px;
+	  right: 20px;
+	  color: white;
+  }
+
+  .red {
+	background: rgb(204, 53, 37);
+  }
+
+  .signout-button {
+	  font-size: 0.8rem;
+	  padding: 0.5rem 1rem;
+  }
