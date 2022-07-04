@@ -1,1 +1,1 @@
-web: npm run serve -- -p 5000
+web:npm run serve -- -p 5000
