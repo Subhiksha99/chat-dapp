@@ -1,1 +1,1 @@
-web:npm run serve -- -p $port
+web: npm run serve -- -p 5000
