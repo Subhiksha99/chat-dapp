@@ -39,7 +39,7 @@
     };
 
     // Get Messages
-    db.get('chat')
+    db.get("example")
       .map(match)
       .once(async (data, id) => {
         if (data) {
@@ -69,7 +69,7 @@
     const secret = await SEA.encrypt(newMessage, '#foo');
     const message = user.get('all').set({ what: secret });
     const index = new Date().toISOString();
-    db.get('chat').get(index).put(message);
+    db.get("example").get(index).put(message);
     newMessage = '';
     canAutoScroll = true;
     autoScroll();
@@ -77,7 +77,7 @@
 </script>
 
 <div class="container">
-  {#if $username}
+  {#if $username!="undefined"}
     <main on:scroll={debouncedWatchScroll}>
       {#each messages as message (message.when)}
         <ChatMessage {message} sender={$username} />
