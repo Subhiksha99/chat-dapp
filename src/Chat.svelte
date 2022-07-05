@@ -77,7 +77,7 @@
 </script>
 
 <div class="container">
-  {#if $username!="undefined"}
+  {#if $username}
     <main on:scroll={debouncedWatchScroll}>
       {#each messages as message (message.when)}
         <ChatMessage {message} sender={$username} />
