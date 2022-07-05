@@ -20,7 +20,7 @@
     });
   }
 </script>
-<body>
+
 <div class ="loginContainer">
   <h3 style="align-items:center;color:black">Login</h3>
 <label for="username">Username</label>
@@ -33,4 +33,4 @@
 <button class="login" on:click={login}>Login</button>
 <button class="login"  on:click={signup}>Sign Up</button>
 </div>
-</body>
+
