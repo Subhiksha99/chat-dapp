@@ -6,7 +6,7 @@ import { writable } from 'svelte/store';
 
 // Database
 export const db = GUN();
-db.get("example").get(input).put({ title: "dummy", done: false })
+
   
 // Gun User
 export const user = db.user().recall({});
